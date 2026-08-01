@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Portal | Okechukwu Benjamin Chimaobi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="global-kinetic-canvas"></canvas>
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="global-header">
+        <div class="logo-container">
+            <span class="logo-text">OBC<span class="accent-dot">.</span></span>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+            <a href="resume.html" class="nav-link active">Resume</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-controls">
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <button id="hamburger-trigger" aria-label="Open Menu">
+                <span class="bar line-top"></span>
+                <span class="bar line-mid"></span>
+                <span class="bar line-bot"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay (Now supporting 7 layout paths) -->
+    <div id="mobile-menu-overlay" class="menu-grid-container menu-seven-columns">
+        <div class="menu-column col-1"><a href="index.html" class="mobile-link" data-index="01">Home</a></div>
+        <div class="menu-column col-2"><a href="about.html" class="mobile-link" data-index="02">About</a></div>
+        <div class="menu-column col-3"><a href="experience.html" class="mobile-link" data-index="03">Experience</a></div>
+        <div class="menu-column col-4"><a href="projects.html" class="mobile-link" data-index="04">Projects</a></div>
+        <div class="menu-column col-5"><a href="dashboard.html" class="mobile-link" data-index="05">Metrics</a></div>
+        <div class="menu-column col-6"><a href="resume.html" class="mobile-link" data-index="06">Resume</a></div>
+        <div class="menu-column col-7"><a href="contact.html" class="mobile-link" data-index="07">Contact</a></div>
+    </div>
+
+    <!-- Main Workspace Stage -->
+    <main class="content-wrapper inner-page-padding">
+        <section class="resume-portal-layout">
+            
+            <!-- CV Download Trigger Hero Header Box -->
+            <div class="resume-download-hero reveal-element">
+                <h3 class="section-tag">06 / Credentials</h3>
+                <h2 class="section-title-large">Curriculum Vitae Hub</h2>
+                <p class="story-paragraph">
+                    Need an offline copy of my executive summary, teaching history, and frontend skills matrix? Download the certified, print-ready document version instantly below.
+                </p>
+                
+                <!-- THE RESUME DOWNLOAD BUTTON PLACEHOLDER -->
+                <div class="download-action-wrapper">
+                    <a href="c:\Users\lenovo\Downloads\Telegram Desktop\Okechukwu_Benjamin_Chimaobi_Resume.pdf" download="Okechukwu_Benjamin_Chimaobi_Resume.pdf" class="magnetic-btn primary-btn download-cv-btn">
+                        <span>Download Certified CV (PDF)</span>
+                        <svg class="download-arrow-icon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Virtual Premium On-Screen Interactive Document Wrapper -->
+            <div class="virtual-cv-document reveal-element">
+                <div class="document-inner-glow"></div>
+                
+                <!-- Document Header Profile -->
+                <div class="doc-header">
+                    <h1 class="doc-name">Okechukwu Benjamin Chimaobi</h1>
+                    <p class="doc-title">Frontend Web Developer</p>
+                </div>
+
+                <div class="doc-body-split">
+                    <!-- Left Section Column -->
+                    <div class="doc-left-col">
+                        <div class="doc-section">
+                            <h3 class="doc-sec-title">Core Focus</h3>
+                            <p class="doc-text">Building high-performance, responsive interfaces with pure vanilla code bases. Integrating educational communication skills directly into scalable, semantic frontend software engineering structures.</p>
+                        </div>
+                        <div class="doc-section">
+                            <h3 class="doc-sec-title">Technical DNA</h3>
+                            <ul class="doc-skills-list">
+                                <li>HTML5 Semantics</li>
+                                <li>CSS3 Flexbox & Grid Architecture</li>
+                                <li>Native JavaScript (ES6+ DOM)</li>
+                                <li>Responsive Interface Design</li>
+                                <li>Git & GitHub Repositories</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right Section Column -->
+                    <div class="doc-right-col">
+                        <div class="doc-section">
+                            <h3 class="doc-sec-title">Engineering Path</h3>
+                            <div class="doc-item">
+                                <h4 class="doc-item-role">Frontend Web Development Intern</h4>
+                                <p class="doc-item-meta">Goldima Tech School | 2 Months</p>
+                                <p class="doc-text">Developed responsive web views, investigated performance patterns, and executed technical software architectures under core instructor supervision frameworks.</p>
+                            </div>
+                            <div class="doc-item">
+                                <h4 class="doc-item-role">ICT & Science Educator</h4>
+                                <p class="doc-item-meta">Alpha Future Hope Academy | June 2025 – Sept 2025</p>
+                                <p class="doc-text">Taught advanced computer literacy and logical problem management loops while managing technical lesson plans and team presentation schedules.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

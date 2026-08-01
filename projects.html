@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Lab | Okechukwu Benjamin Chimaobi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="global-kinetic-canvas"></canvas>
+    <div id="scroll-progress"></div>
+
+    <!-- Global Header -->
+    <header class="global-header">
+        <div class="logo-container">
+            <span class="logo-text">OBC<span class="accent-dot">.</span></span>
+        </div>
+        <nav class="desktop-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="experience.html" class="nav-link">Experience</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="resume.html" class="nav-link">Resume</a> <!-- Add this line -->
+    <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+
+        <div class="header-controls">
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <!-- Micro-Animated Hamburger Icon -->
+<button id="hamburger-trigger" aria-label="Open Menu">
+    <span class="bar line-top"></span>
+    <span class="bar line-mid"></span>
+    <span class="bar line-bot"></span>
+</button>
+
+        </div>
+    </header>
+
+<!-- Fullscreen Mobile Navigation Grid Menu Overlay (UPDATED FOR ALL FILES) -->
+<div id="mobile-menu-overlay" class="menu-grid-container menu-seven-columns">
+    <div class="menu-column col-1"><a href="index.html" class="mobile-link" data-index="01">Home</a></div>
+    <div class="menu-column col-2"><a href="about.html" class="mobile-link" data-index="02">About</a></div>
+    <div class="menu-column col-3"><a href="experience.html" class="mobile-link" data-index="03">Experience</a></div>
+    <div class="menu-column col-4"><a href="projects.html" class="mobile-link" data-index="04">Projects</a></div>
+    <div class="menu-column col-5"><a href="dashboard.html" class="mobile-link" data-index="05">Metrics</a></div>
+    <div class="menu-column col-6"><a href="resume.html" class="mobile-link" data-index="06">Resume</a></div>
+    <div class="menu-column col-7"><a href="contact.html" class="mobile-link" data-index="07">Contact</a></div>
+</div>
+
+
+    <!-- Main Workspace Stage -->
+    <main class="content-wrapper inner-page-padding">
+        <section class="projects-section-container">
+            <h3 class="section-tag center-tag">03 / Case Studies</h3>
+            <h2 class="section-title-large center-title">The Engineering Lab</h2>
+
+            <!-- Interactive State Filters Layout -->
+            <div class="filter-button-cluster reveal-element">
+                <button class="filter-btn active" data-filter="all">All Systems</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="management">Enterprise UI</button>
+            </div>
+
+            <!-- Dynamic Project Cards Grid -->
+            <div class="projects-isomorphic-grid">
+                
+                <!-- Project Card 1: Luxora -->
+                <div class="project-card reveal-element structural-card" data-category="ecommerce">
+                    <div class="card-inner-glow"></div>
+                    <div class="project-visual-mock">
+                        <div class="mock-browser-bar">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        </div>
+                        <div class="mock-visual-content lx-bg">
+                            <span class="brand-watermark">LUXORA</span>
+                        </div>
+                    </div>
+                    <div class="project-meta-details">
+                        <span class="project-index-label">01 / PRODUCTION</span>
+                        <h3 class="project-card-title">Luxora</h3>
+                        <p class="project-card-summary">
+                            A modern, responsive e-commerce web platform engineered for supreme visual impact. Features an intuitive shopping user experience flow, robust semantic layouts, clean navigation patterns, and performance-tuned UI micro-interactions.
+                        </p>
+                        <div class="tech-tag-badges">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript (ES6+)</span>
+                        </div>
+                        
+                        <!-- PROJECT LINKS CONTAINER -->
+                        <div class="project-action-links">
+                            <a href="https://lucifer-morning-star-bot.github.io/luxy/index.html" target="_blank" class="proj-link live-demo">Live Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: WagePro -->
+                <div class="project-card reveal-element structural-card" data-category="management">
+                    <div class="card-inner-glow"></div>
+                    <div class="project-visual-mock">
+                        <div class="mock-browser-bar">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        </div>
+                        <div class="mock-visual-content wp-bg">
+                            <span class="brand-watermark">WAGEPRO</span>
+                        </div>
+                    </div>
+                    <div class="project-meta-details">
+                        <span class="project-index-label">02 / STRUCTURED UI</span>
+                        <h3 class="project-card-title">WagePro</h3>
+                        <p class="project-card-summary">
+                            An enterprise-grade workforce and payroll optimization layout concept. Demonstrates high competency in complex multi-page data coordination layouts, sleek aesthetic consistency, responsive modular forms, and structured frontend engineering.
+                        </p>
+                        <div class="tech-tag-badges">
+                            <span>Semantic HTML</span>
+                            <span>Flexbox / Grid</span>
+                            <span>Interactive JS</span>
+                        </div>
+                        
+                        <!-- PROJECT LINKS CONTAINER -->
+                        <div class="project-action-links">
+                            <a href="https://Darhmi-wager.vercel.app" target="_blank" class="proj-link live-demo">Live Site</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

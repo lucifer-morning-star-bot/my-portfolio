@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Experience | Okechukwu Benjamin Chimaobi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="global-kinetic-canvas"></canvas>
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="global-header">
+        <div class="logo-container">
+            <span class="logo-text">OBC<span class="accent-dot">.</span></span>
+        </div>
+        <nav class="desktop-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="experience.html" class="nav-link">Experience</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="resume.html" class="nav-link">Resume</a> <!-- Add this line -->
+    <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+
+        <div class="header-controls">
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <!-- Micro-Animated Hamburger Icon -->
+<button id="hamburger-trigger" aria-label="Open Menu">
+    <span class="bar line-top"></span>
+    <span class="bar line-mid"></span>
+    <span class="bar line-bot"></span>
+</button>
+
+        </div>
+    </header>
+
+    <!-- Fullscreen Mobile Navigation Grid Menu Overlay (UPDATED FOR ALL FILES) -->
+<div id="mobile-menu-overlay" class="menu-grid-container menu-seven-columns">
+    <div class="menu-column col-1"><a href="index.html" class="mobile-link" data-index="01">Home</a></div>
+    <div class="menu-column col-2"><a href="about.html" class="mobile-link" data-index="02">About</a></div>
+    <div class="menu-column col-3"><a href="experience.html" class="mobile-link" data-index="03">Experience</a></div>
+    <div class="menu-column col-4"><a href="projects.html" class="mobile-link" data-index="04">Projects</a></div>
+    <div class="menu-column col-5"><a href="dashboard.html" class="mobile-link" data-index="05">Metrics</a></div>
+    <div class="menu-column col-6"><a href="resume.html" class="mobile-link" data-index="06">Resume</a></div>
+    <div class="menu-column col-7"><a href="contact.html" class="mobile-link" data-index="07">Contact</a></div>
+</div>
+
+
+    <!-- Timeline Wrapper Stage -->
+    <main class="content-wrapper inner-page-padding">
+        <section class="timeline-container">
+            <h3 class="section-tag center-tag">02 / Career Path</h3>
+            <h2 class="section-title-large center-title">Professional Growth Timeline</h2>
+
+            <div class="timeline-spine"></div>
+
+            <!-- Milestone Node 1 -->
+            <div class="timeline-item left-node reveal-element">
+                <div class="timeline-content-card">
+                    <span class="timeline-date">Present</span>
+                    <h3 class="timeline-role">Independent Frontend Builder</h3>
+                    <h4 class="timeline-company">Self-Directed Development Lab</h4>
+                    <p class="timeline-desc">
+                        Engineering deep web interfaces applying semantically robust structures. Building high-performance visual mechanics completely natively without reliance on sprawling external dependencies. Focused heavily on interface loading optimizations and standard-compliant layout architectures.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Milestone Node 2 -->
+            <div class="timeline-item right-node reveal-element">
+                <div class="timeline-content-card">
+                    <span class="timeline-date">Previous Years</span>
+                    <h3 class="timeline-role">Professional Educator / Teacher</h3>
+                    <h4 class="timeline-company">Educational Institutions</h4>
+                    <p class="timeline-desc">
+                        Cultivated supreme technical focus metrics by structuring systemic informational lesson pathways. Developed complex interpersonal problem tracking capabilities, team communication coordination loops, and the strategic patience required to evaluate code and logistical problems effectively.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

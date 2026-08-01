@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Okechukwu Benjamin Chimaobi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="global-kinetic-canvas"></canvas>
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="global-header">
+        <div class="logo-container">
+            <span class="logo-text">OBC<span class="accent-dot">.</span></span>
+        </div>
+        <nav class="desktop-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="experience.html" class="nav-link">Experience</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="resume.html" class="nav-link">Resume</a> <!-- Add this line -->
+    <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+
+        <div class="header-controls">
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+           <!-- Micro-Animated Hamburger Icon -->
+<button id="hamburger-trigger" aria-label="Open Menu">
+    <span class="bar line-top"></span>
+    <span class="bar line-mid"></span>
+    <span class="bar line-bot"></span>
+</button>
+
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+<!-- Fullscreen Mobile Navigation Grid Menu Overlay -->
+<!-- Fullscreen Mobile Navigation Grid Menu Overlay (UPDATED FOR ALL FILES) -->
+<div id="mobile-menu-overlay" class="menu-grid-container menu-seven-columns">
+    <div class="menu-column col-1"><a href="index.html" class="mobile-link" data-index="01">Home</a></div>
+    <div class="menu-column col-2"><a href="about.html" class="mobile-link" data-index="02">About</a></div>
+    <div class="menu-column col-3"><a href="experience.html" class="mobile-link" data-index="03">Experience</a></div>
+    <div class="menu-column col-4"><a href="projects.html" class="mobile-link" data-index="04">Projects</a></div>
+    <div class="menu-column col-5"><a href="dashboard.html" class="mobile-link" data-index="05">Metrics</a></div>
+    <div class="menu-column col-6"><a href="resume.html" class="mobile-link" data-index="06">Resume</a></div>
+    <div class="menu-column col-7"><a href="contact.html" class="mobile-link" data-index="07">Contact</a></div>
+</div>
+
+
+    <!-- Main Core Layout -->
+    <main class="content-wrapper inner-page-padding">
+        <section class="about-grid-layout">
+            
+            <!-- Left Side: Profile Text Story Block -->
+            <div class="story-panel reveal-element">
+                <h3 class="section-tag">01 / Biography</h3>
+                <h2 class="section-title-large">Bridging Communication <br>& Clean Code</h2>
+                <p class="story-paragraph">
+                    My professional journey began in education. As a teacher, I mastered the art of patience, precise communication, and breaking down highly complex ideas into simple, structured, actionable lessons. 
+                </p>
+                <p class="story-paragraph">
+                    Today, I bring those exact human-centric skills into frontend software development. I don't just write functional code; I build clean architectures with semantically sound layout mechanics that prioritize the end-user experience. Every project is an explicit opportunity for me to solve problems, iterate rapidly, and adapt to emerging technical demands.
+                </p>
+            </div>
+
+            <!-- Right Side: Automated Skills Metrics Bars -->
+            <div class="skills-panel reveal-element">
+                <h3 class="section-tag">02 / Technical DNA</h3>
+                <h2 class="section-title-large">Core Competencies</h2>
+                
+                <div class="skills-metric-container">
+                    <!-- HTML5 Bar -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5 Architecture</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="--target-width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS3 Bar -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS3 Flexbox / Grid / Animation</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="--target-width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript Bar -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript (ES6+ Native DOM)</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="--target-width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Responsive Web Design Bar -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span class="skill-name">Responsive Web Design</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="--target-width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Version Control Bar -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span class="skill-name">Git & GitHub Repository Management</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" style="--target-width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Metrics Dashboard | Okechukwu Benjamin Chimaobi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="global-kinetic-canvas"></canvas>
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="global-header">
+        <div class="logo-container">
+            <span class="logo-text">OBC<span class="accent-dot">.</span></span>
+        </div>
+        <nav class="desktop-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="experience.html" class="nav-link">Experience</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="resume.html" class="nav-link">Resume</a> <!-- Add this line -->
+    <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+
+        <div class="header-controls">
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <!-- Micro-Animated Hamburger Icon -->
+<button id="hamburger-trigger" aria-label="Open Menu">
+    <span class="bar line-top"></span>
+    <span class="bar line-mid"></span>
+    <span class="bar line-bot"></span>
+</button>
+
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+<!-- Fullscreen Mobile Navigation Grid Menu Overlay (UPDATED FOR ALL FILES) -->
+<div id="mobile-menu-overlay" class="menu-grid-container menu-seven-columns">
+    <div class="menu-column col-1"><a href="index.html" class="mobile-link" data-index="01">Home</a></div>
+    <div class="menu-column col-2"><a href="about.html" class="mobile-link" data-index="02">About</a></div>
+    <div class="menu-column col-3"><a href="experience.html" class="mobile-link" data-index="03">Experience</a></div>
+    <div class="menu-column col-4"><a href="projects.html" class="mobile-link" data-index="04">Projects</a></div>
+    <div class="menu-column col-5"><a href="dashboard.html" class="mobile-link" data-index="05">Metrics</a></div>
+    <div class="menu-column col-6"><a href="resume.html" class="mobile-link" data-index="06">Resume</a></div>
+    <div class="menu-column col-7"><a href="contact.html" class="mobile-link" data-index="07">Contact</a></div>
+</div>
+
+
+    <!-- Main Dashboard Grid Layout -->
+    <main class="content-wrapper inner-page-padding">
+        <section class="dashboard-wrapper-grid">
+            <div class="dashboard-header-block reveal-element">
+                <h3 class="section-tag">04 / Performance telemetry</h3>
+                <h2 class="section-title-large">Real-Time Core Diagnostics</h2>
+                <p class="story-paragraph">
+                    This section demonstrates engineering transparency. Below is real-time performance tracking telemetry gathered straight from your client engine instance.
+                </p>
+            </div>
+
+            <div class="metrics-hardware-grid">
+                
+                <!-- Telemetry Terminal 1: Render Stability -->
+                <div class="metric-glass-card reveal-element">
+                    <div class="metric-icon-row">
+                        <span class="pulse-status-indicator online"></span>
+                        <span class="telemetry-label font-mono">SYS_FPS_STABILITY</span>
+                    </div>
+                    <div class="huge-metric-display font-mono" id="fps-counter">60.0</div>
+                    <p class="metric-explanation">Frames per second calculation monitoring the hardware acceleration of our global background kinetic canvas backdrop layout loops.</p>
+                </div>
+
+                <!-- Telemetry Terminal 2: Layout State Tracking -->
+                <div class="metric-glass-card reveal-element">
+                    <div class="metric-icon-row">
+                        <span class="pulse-status-indicator latency"></span>
+                        <span class="telemetry-label font-mono">DOM_RENDER_LATENCY</span>
+                    </div>
+                    <div class="huge-metric-display font-mono" id="latency-counter">0.02ms</div>
+                    <p class="metric-explanation">Simulated DOM element render event painting tracking intervals measuring calculations inside standard viewport grid trees.</p>
+                </div>
+
+                <!-- Telemetry Terminal 3: Persistent Engine Runtime -->
+                <div class="metric-glass-card reveal-element">
+                    <div class="metric-icon-row">
+                        <span class="pulse-status-indicator online"></span>
+                        <span class="telemetry-label font-mono">CORE_SESSION_UPTIME</span>
+                    </div>
+                    <div class="huge-metric-display font-mono" id="uptime-counter">00:00</div>
+                    <p class="metric-explanation">Continuous timer counting sequential seconds elapsed since this specific clean page window structure successfully instantiated.</p>
+                </div>
+
+                <!-- Telemetry Terminal 4: Static File Fingerprint -->
+                <div class="metric-glass-card reveal-element">
+                    <div class="metric-icon-row">
+                        <span class="pulse-status-indicator active-spec"></span>
+                        <span class="telemetry-label font-mono">FILE_WEIGHT_MINIMAL</span>
+                    </div>
+                    <div class="huge-metric-display font-mono">100%</div>
+                    <p class="metric-explanation">Zero heavy external framework libraries added. Native HTML5 semantic structure, CSS layout architecture, and vanilla JavaScript loops.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

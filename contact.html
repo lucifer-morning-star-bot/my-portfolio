@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect | Okechukwu Benjamin Chimaobi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="global-kinetic-canvas"></canvas>
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="global-header">
+        <div class="logo-container">
+            <span class="logo-text">OBC<span class="accent-dot">.</span></span>
+        </div>
+        <nav class="desktop-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="experience.html" class="nav-link">Experience</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="resume.html" class="nav-link">Resume</a> <!-- Add this line -->
+    <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+
+        <div class="header-controls">
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <!-- Micro-Animated Hamburger Icon -->
+<button id="hamburger-trigger" aria-label="Open Menu">
+    <span class="bar line-top"></span>
+    <span class="bar line-mid"></span>
+    <span class="bar line-bot"></span>
+</button>
+
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+<!-- Fullscreen Mobile Navigation Grid Menu Overlay (UPDATED FOR ALL FILES) -->
+<div id="mobile-menu-overlay" class="menu-grid-container menu-seven-columns">
+    <div class="menu-column col-1"><a href="index.html" class="mobile-link" data-index="01">Home</a></div>
+    <div class="menu-column col-2"><a href="about.html" class="mobile-link" data-index="02">About</a></div>
+    <div class="menu-column col-3"><a href="experience.html" class="mobile-link" data-index="03">Experience</a></div>
+    <div class="menu-column col-4"><a href="projects.html" class="mobile-link" data-index="04">Projects</a></div>
+    <div class="menu-column col-5"><a href="dashboard.html" class="mobile-link" data-index="05">Metrics</a></div>
+    <div class="menu-column col-6"><a href="resume.html" class="mobile-link" data-index="06">Resume</a></div>
+    <div class="menu-column col-7"><a href="contact.html" class="mobile-link" data-index="07">Contact</a></div>
+</div>
+
+
+    <!-- Contact Splitting Viewport Stage -->
+    <main class="content-wrapper inner-page-padding">\
+        <section class="contact-split-layout">
+            
+            <!-- Left Panel: Text Hooks & Social Directories -->
+            <div class="contact-text-panel reveal-element">
+                <h3 class="section-tag">05 / Availability</h3>
+                <h2 class="section-title-large">Initiate A Technical <br>Connection Cycle</h2>
+                <p class="story-paragraph">
+                    I am actively checking incoming opportunities for junior frontend development roles. If you are a recruiter looking for a developer with clear communication, precision engineering discipline, and a strong drive to learn, let’s talk.
+                </p>
+                
+                <div class="direct-channels-list">
+                    <div class="channel-row">
+                        <span class="channel-label">Identity Token:</span>
+                        <span class="channel-value">Okechukwu Benjamin Chimaobi</span>
+                    </div>
+                    
+                    <!-- LINKEDIN LINK PLACEHOLDER -->
+                    <div class="channel-row">
+                        <span class="channel-label">Professional Hub:</span>
+                        <a href="https://www.linkedin.com/in/okechukwu-chimaobi-579811325?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="channel-anchor-link">My LinkedIn Profile</a>
+                    </div>
+                    
+                    <!-- GITHUB LINK PLACEHOLDER -->
+                    <div class="channel-row">
+                        <span class="channel-label">Source Control:</span>
+                        <a href="https://github.com/lucifer-morning-star-bot" target="_blank" class="channel-anchor-link">My GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Magnetic Interface Form Wrapper -->
+            <div class="contact-form-panel reveal-element">
+                <!-- FORM METHOD ACTION PLACEHOLDER FOR RECRUITERS -->
+                <form class="magnetic-interactive-form" action="https://formspree.io/f/xzdnovyg" method="POST">
+                    
+                    <!-- Input 1 -->
+                    <div class="interactive-input-group">
+                        <input type="text" name="name" id="recruiter-name" class="form-input-field" required placeholder=" ">
+                        <label for="recruiter-name" class="floating-input-label">Your Signature Name</label>
+                        <div class="field-focus-line"></div>
+                    </div>
+
+                    <!-- Input 2 -->
+                    <div class="interactive-input-group">
+                        <input type="email" name="email" id="recruiter-email" class="form-input-field" required placeholder=" ">
+                        <label for="recruiter-email" class="floating-input-label">Corporate Email Address</label>
+                        <div class="field-focus-line"></div>
+                    </div>
+
+                    <!-- Input 3 -->
+                    <div class="interactive-input-group">
+                        <textarea name="message" id="recruiter-message" class="form-textarea-field" required placeholder=" " rows="5"></textarea>
+                        <label for="recruiter-message" class="floating-input-label">Project Details / Job Brief</label>
+                        <div class="field-focus-line"></div>
+                    </div>
+
+                    <button type="submit" class="magnetic-btn primary-btn submit-form-btn">
+                        Transmit Core Message
+                    </button>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
